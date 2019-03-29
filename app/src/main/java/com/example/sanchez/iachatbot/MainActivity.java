@@ -50,18 +50,74 @@ public class MainActivity extends AppCompatActivity {
                     if(txtTexto.getText().toString().toLowerCase().trim().equals("hola")){
                         chat.add(new UserModelo("Machine:","Hola!",R.drawable.man));
 
-                    }else if(txtTexto.getText().toString().toLowerCase().equals("buen dia") || txtTexto.getText().toString().toLowerCase().trim().equals("buen día")){
+                    }else if(txtTexto.getText().toString().toLowerCase().equals("buen dia") ||
+                            txtTexto.getText().toString().toLowerCase().trim().equals("buen día")){
                         chat.add(new UserModelo("Machine:","Hola, buen día!",R.drawable.man));
 
-                    }else if(txtTexto.getText().toString().equals("como esta") || txtTexto.getText().toString().equals("como esta?") || txtTexto.getText().toString().equals("como está?") || txtTexto.getText().toString().equals("como está") || txtTexto.getText().toString().equals("como estás?") || txtTexto.getText().toString().equals("como está") || txtTexto.getText().toString().equals("como estas") ){
+                    }else if(txtTexto.getText().toString().equals("como esta") ||
+                            txtTexto.getText().toString().equals("como esta?") ||
+                            txtTexto.getText().toString().equals("como está?") ||
+                            txtTexto.getText().toString().equals("como está") ||
+                            txtTexto.getText().toString().equals("como estás?") ||
+                            txtTexto.getText().toString().equals("como está") ||
+                            txtTexto.getText().toString().equals("como estas") ){
                         chat.add(new UserModelo("Machine:","Bien y tu?",R.drawable.man));
 
                     }else if(txtTexto.getText().toString().toLowerCase().trim().equals("profesor")){
                         chat.add(new UserModelo("Machine:","Digame!",R.drawable.man));
 
-                    }else if(txtTexto.getText().toString().toLowerCase().equals("Cuando es el examen") || txtTexto.getText().toString().toLowerCase().equals("Cuando es el examen?") || txtTexto.getText().toString().toLowerCase().equals("Cuándo es el examen") || txtTexto.getText().toString().toLowerCase().equals("Cuándo es el examen?") || txtTexto.getText().toString().toLowerCase().equals("Cuándo es el exámen") || txtTexto.getText().toString().toLowerCase().equals("Cuándo es el exámen?") ){
-                        chat.add(new UserModelo("Machine:","No habra examen.",R.drawable.man));
-                    }else if(txtTexto.getText().toString().equals("paseme profesor")){
+                    }else if(txtTexto.getText().toString().toLowerCase().trim().equals("habra clases manana") ||
+                            txtTexto.getText().toString().toLowerCase().equals("habra clases mañana")  ||
+                            txtTexto.getText().toString().toLowerCase().equals("habra clases mañana?") ||
+                            txtTexto.getText().toString().toLowerCase().equals("habrá clases mañana?") ){
+                        chat.add(new UserModelo("Machine:","si, por supuesto que si.",R.drawable.man));
+
+                    }else if(txtTexto.getText().toString().toLowerCase().equals("cuando habra examen") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuándo habra examen") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuándo habra examen?") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuando habra exámen") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuándo habra exámen") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuándo habra exámen?") ){
+                        chat.add(new UserModelo("Machine:","Revise la guia de estudio por favor.",R.drawable.man));
+
+                    }else if(txtTexto.getText().toString().toLowerCase().equals("cuando habra examen") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuando habra examen?") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuándo habra examen") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuándo habra examen?") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuándo habrá examen") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuándo habrá exámen?") ){
+                        chat.add(new UserModelo("Machine:","Revise la guia de estudio por favor.",R.drawable.man));
+
+                    }else if(txtTexto.getText().toString().toLowerCase().equals("cuando habrá examen") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuando habrá examen?") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuándo habrá examen") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuándo habrá examen?") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuándo habrá examen") ){
+                        chat.add(new UserModelo("Machine:","Revise la guia de estudio por favor.",R.drawable.man));
+
+                    }else if(txtTexto.getText().toString().toLowerCase().equals("a que hora sera el examen") ||
+                            txtTexto.getText().toString().toLowerCase().equals("a que hora sera el examen?") ||
+                            txtTexto.getText().toString().toLowerCase().equals("a que hora será el examen") ||
+                            txtTexto.getText().toString().toLowerCase().equals("a que hora será el examen?") ||
+                            txtTexto.getText().toString().toLowerCase().equals("a que hora será el exámen") ||
+                            txtTexto.getText().toString().toLowerCase().equals("a que hora será el exámen") ||
+                            txtTexto.getText().toString().toLowerCase().equals("a que hora sera el exámen?") ||
+                            txtTexto.getText().toString().toLowerCase().equals("a que hora sera el exámen?") ||
+                            txtTexto.getText().toString().toLowerCase().equals("a que hora será el exámen?") ){
+                        chat.add(new UserModelo("Machine:","El examen será a las 8:00 am en hora de clase",R.drawable.man));
+
+                    }else if(txtTexto.getText().toString().toLowerCase().equals("cuando subira calificaciones") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuando subira calificaciones?") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuando subirá calificaciones") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuando subirá calificaciones?") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuándo subirá calificaciones") ||
+                            txtTexto.getText().toString().toLowerCase().equals("cuándo subirá calificaciones?") ){
+                        chat.add(new UserModelo("Machine:","Revise sus notas por favor.",R.drawable.man));
+
+
+                    }else if(txtTexto.getText().toString().toLowerCase().equals("paseme profesor")){
+                        chat.add(new UserModelo("Machine:","Estudie!",R.drawable.man));
+                    }else if(txtTexto.getText().toString().toLowerCase().equals("paseme profesor")){
                         chat.add(new UserModelo("Machine:","Estudie!",R.drawable.man));
                     }
                 }
