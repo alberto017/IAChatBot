@@ -47,6 +47,7 @@ public class Credits extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
 /*
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
